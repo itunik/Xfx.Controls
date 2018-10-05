@@ -89,6 +89,7 @@ namespace Xfx.Controls.iOS.Renderers
 
         private void SetItemsSource()
         {
+            ComboBox.ItemsSource = ComboBox.ItemsSource ?? new List<string>();
             var items = ComboBox.ItemsSource.ToList();
             NativeControl.UpdateItems(items);
         }
